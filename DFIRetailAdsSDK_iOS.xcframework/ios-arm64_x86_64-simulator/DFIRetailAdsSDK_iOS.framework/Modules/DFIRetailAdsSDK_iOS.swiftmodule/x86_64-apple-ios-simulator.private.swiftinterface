@@ -1,0 +1,551 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DFIRetailAdsSDK_iOS
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+open class DateTransform : DFIRetailAdsSDK_iOS.TransformType {
+  public typealias Object = Foundation.Date
+  public typealias JSON = Swift.Double
+  public enum Unit : Foundation.TimeInterval {
+    case seconds
+    case milliseconds
+    public init?(rawValue: Foundation.TimeInterval)
+    public typealias RawValue = Foundation.TimeInterval
+    public var rawValue: Foundation.TimeInterval {
+      get
+    }
+  }
+  public init(unit: DFIRetailAdsSDK_iOS.DateTransform.Unit = .seconds)
+  open func transformFromJSON(_ value: Any?) -> Foundation.Date?
+  open func transformToJSON(_ value: Foundation.Date?) -> Swift.Double?
+  @objc deinit
+}
+public func <- <Transform>(left: inout Transform.Object, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func >>> <Transform>(left: Transform.Object, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func <- <Transform>(left: inout Transform.Object?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func >>> <Transform>(left: Transform.Object?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func <- <Transform>(left: inout [Transform.Object], right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func >>> <Transform>(left: [Transform.Object], right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func <- <Transform>(left: inout [Transform.Object]?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func >>> <Transform>(left: [Transform.Object]?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func <- <Transform>(left: inout [Swift.String : Transform.Object], right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func >>> <Transform>(left: [Swift.String : Transform.Object], right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func <- <Transform>(left: inout [Swift.String : Transform.Object]?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func >>> <Transform>(left: [Swift.String : Transform.Object]?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func <- <Transform>(left: inout Transform.Object, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <Transform>(left: Transform.Object, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <Transform>(left: inout Transform.Object?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <Transform>(left: Transform.Object?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <Transform>(left: inout Swift.Dictionary<Swift.String, Transform.Object>, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <Transform>(left: Swift.Dictionary<Swift.String, Transform.Object>, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <Transform>(left: inout Swift.Dictionary<Swift.String, Transform.Object>?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <Transform>(left: Swift.Dictionary<Swift.String, Transform.Object>?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <Transform>(left: inout Swift.Dictionary<Swift.String, [Transform.Object]>, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <Transform>(left: Swift.Dictionary<Swift.String, [Transform.Object]>, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <Transform>(left: inout Swift.Dictionary<Swift.String, [Transform.Object]>?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <Transform>(left: Swift.Dictionary<Swift.String, [Transform.Object]>?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <Transform>(left: inout Swift.Array<Transform.Object>, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <Transform>(left: Swift.Array<Transform.Object>, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <Transform>(left: inout Swift.Array<Transform.Object>?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <Transform>(left: Swift.Array<Transform.Object>?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <Transform>(left: inout [[Transform.Object]], right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func >>> <Transform>(left: [[Transform.Object]], right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func <- <Transform>(left: inout [[Transform.Object]]?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func >>> <Transform>(left: [[Transform.Object]]?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType
+public func <- <Transform>(left: inout Swift.Set<Transform.Object>, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable, Transform.Object : Swift.Hashable
+public func >>> <Transform>(left: Swift.Set<Transform.Object>, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable, Transform.Object : Swift.Hashable
+public func <- <Transform>(left: inout Swift.Set<Transform.Object>?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable, Transform.Object : Swift.Hashable
+public func >>> <Transform>(left: Swift.Set<Transform.Object>?, right: (DFIRetailAdsSDK_iOS.Map, Transform)) where Transform : DFIRetailAdsSDK_iOS.TransformType, Transform.Object : DFIRetailAdsSDK_iOS.BaseMappable, Transform.Object : Swift.Hashable
+open class DateFormatterTransform : DFIRetailAdsSDK_iOS.TransformType {
+  public typealias Object = Foundation.Date
+  public typealias JSON = Swift.String
+  final public let dateFormatter: Foundation.DateFormatter
+  public init(dateFormatter: Foundation.DateFormatter)
+  open func transformFromJSON(_ value: Any?) -> Foundation.Date?
+  open func transformToJSON(_ value: Foundation.Date?) -> Swift.String?
+  @objc deinit
+}
+open class CodableTransform<T> : DFIRetailAdsSDK_iOS.TransformType where T : Swift.Decodable, T : Swift.Encodable {
+  public typealias Object = T
+  public typealias JSON = Any
+  public init()
+  open func transformFromJSON(_ value: Any?) -> DFIRetailAdsSDK_iOS.CodableTransform<T>.Object?
+  open func transformToJSON(_ value: T?) -> Any?
+  @objc deinit
+}
+public protocol ImmutableMappable : DFIRetailAdsSDK_iOS.BaseMappable {
+  init(map: DFIRetailAdsSDK_iOS.Map) throws
+}
+extension DFIRetailAdsSDK_iOS.ImmutableMappable {
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  public init(JSONString: Swift.String, context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil) throws
+  public init(JSON: [Swift.String : Any], context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil) throws
+  public init(JSONObject: Any, context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil) throws
+}
+extension DFIRetailAdsSDK_iOS.Map {
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> T
+  final public func value<Transform>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", using transform: Transform, file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> Transform.Object where Transform : DFIRetailAdsSDK_iOS.TransformType
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> T where T : Swift.RawRepresentable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> T? where T : Swift.RawRepresentable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [T] where T : Swift.RawRepresentable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [T]? where T : Swift.RawRepresentable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> T where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> T? where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [T] where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [T]? where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<Transform>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", using transform: Transform, file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [Transform.Object] where Transform : DFIRetailAdsSDK_iOS.TransformType
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [Swift.String : T] where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [Swift.String : T]? where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<Transform>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", using transform: Transform, file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [Swift.String : Transform.Object] where Transform : DFIRetailAdsSDK_iOS.TransformType
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [[T]]? where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<T>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [[T]] where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<Transform>(_ key: Swift.String, nested: Swift.Bool? = nil, delimiter: Swift.String = ".", using transform: Transform, file: Swift.StaticString = #file, function: Swift.StaticString = #function, line: Swift.UInt = #line) throws -> [[Transform.Object]] where Transform : DFIRetailAdsSDK_iOS.TransformType
+}
+extension DFIRetailAdsSDK_iOS.Mapper where N : DFIRetailAdsSDK_iOS.ImmutableMappable {
+  final public func map(JSON: [Swift.String : Any]) throws -> N
+  final public func map(JSONString: Swift.String) throws -> N
+  final public func map(JSONObject: Any) throws -> N
+  final public func mapArray(JSONArray: [[Swift.String : Any]]) throws -> [N]
+  final public func mapArray(JSONString: Swift.String) throws -> [N]
+  final public func mapArray(JSONObject: Any) throws -> [N]
+  final public func mapDictionary(JSONString: Swift.String) throws -> [Swift.String : N]
+  final public func mapDictionary(JSONObject: Any?) throws -> [Swift.String : N]
+  final public func mapDictionary(JSON: [Swift.String : [Swift.String : Any]]) throws -> [Swift.String : N]
+  final public func mapDictionaryOfArrays(JSONObject: Any?) throws -> [Swift.String : [N]]
+  final public func mapDictionaryOfArrays(JSON: [Swift.String : [[Swift.String : Any]]]) throws -> [Swift.String : [N]]
+  final public func mapArrayOfArrays(JSONObject: Any?) throws -> [[N]]
+}
+@objc public class YuuJestoPageAds : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var ads: DFIRetailAdsSDK_iOS.YuuJestoDisplayAds?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class YuuJestoDisplayAds : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var yuuJestoPagBanner: [DFIRetailAdsSDK_iOS.DisplayAds]
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class YuuMyIDSkinPageAds : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var ads: DFIRetailAdsSDK_iOS.yuuMyIDSkinBackground?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class yuuMyIDSkinBackground : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var yuuMyIDSkinBackground: [DFIRetailAdsSDK_iOS.DisplayAds]
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class YuuHomePageAds : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var ads: DFIRetailAdsSDK_iOS.YuuHomepageDisplayAds?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class YuuHomepageDisplayAds : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var yuuHomePageTakeOver: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageBanner: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTopBrand: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA1_4: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA1_5: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA1_6: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA3_4: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA3_5: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA3_6: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA8_4: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA8_5: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var yuuHomePageTA8_6: [DFIRetailAdsSDK_iOS.DisplayAds]
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+public struct MapError : Swift.Error {
+  public var key: Swift.String?
+  public var currentValue: Any?
+  public var reason: Swift.String?
+  public var file: Swift.StaticString?
+  public var function: Swift.StaticString?
+  public var line: Swift.UInt?
+  public init(key: Swift.String?, currentValue: Any?, reason: Swift.String?, file: Swift.StaticString? = nil, function: Swift.StaticString? = nil, line: Swift.UInt? = nil)
+}
+extension DFIRetailAdsSDK_iOS.MapError : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+open class DataTransform : DFIRetailAdsSDK_iOS.TransformType {
+  public typealias Object = Foundation.Data
+  public typealias JSON = Swift.String
+  public init()
+  open func transformFromJSON(_ value: Any?) -> Foundation.Data?
+  open func transformToJSON(_ value: Foundation.Data?) -> Swift.String?
+  @objc deinit
+}
+open class TransformOf<ObjectType, JSONType> : DFIRetailAdsSDK_iOS.TransformType {
+  public typealias Object = ObjectType
+  public typealias JSON = JSONType
+  public init(fromJSON: @escaping (JSONType?) -> ObjectType?, toJSON: @escaping (ObjectType?) -> JSONType?)
+  open func transformFromJSON(_ value: Any?) -> ObjectType?
+  open func transformToJSON(_ value: ObjectType?) -> JSONType?
+  @objc deinit
+}
+@objc public class WellcomeHomePageAds : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var ads: DFIRetailAdsSDK_iOS.WellcomeHomepageDisplayAds?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class WellcomeHomepageDisplayAds : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var wellcomeAppHomePageTakeOverModal: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageMarquee: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageBrand1: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageBrand2: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageBrand3: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageBrand4: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageBrand5: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageBrand6: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageBrand7: [DFIRetailAdsSDK_iOS.DisplayAds]
+  @objc public var wellcomeAppHomepageBrand8: [DFIRetailAdsSDK_iOS.DisplayAds]
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+open class CustomDateFormatTransform : DFIRetailAdsSDK_iOS.DateFormatterTransform {
+  public init(formatString: Swift.String)
+  @objc deinit
+}
+open class HexColorTransform : DFIRetailAdsSDK_iOS.TransformType {
+  public typealias Object = UIKit.UIColor
+  public typealias JSON = Swift.String
+  public init(prefixToJSON: Swift.Bool = false, alphaToJSON: Swift.Bool = false)
+  open func transformFromJSON(_ value: Any?) -> DFIRetailAdsSDK_iOS.HexColorTransform.Object?
+  open func transformToJSON(_ value: DFIRetailAdsSDK_iOS.HexColorTransform.Object?) -> DFIRetailAdsSDK_iOS.HexColorTransform.JSON?
+  @objc deinit
+}
+extension Foundation.DateFormatter {
+  convenience public init(withFormat format: Swift.String, locale: Swift.String)
+}
+open class ISO8601DateTransform : DFIRetailAdsSDK_iOS.DateFormatterTransform {
+  public init()
+  @objc deinit
+}
+@objc public class DFADUEventsResponse : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var response: DFIRetailAdsSDK_iOS.DFADUResponse?
+  @objc public var status: Any?
+  @objc public var error: Any?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class DFADUResponse : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var data: Swift.String?
+  @objc public var code: Foundation.NSNumber?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class DisplayAds : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var au: Swift.String?
+  @objc public var clickTrackingUrl: Swift.String?
+  @objc public var clientId: Swift.Int
+  @objc public var crt: Swift.String?
+  @objc public var elements: DFIRetailAdsSDK_iOS.Elements?
+  @objc public var impressionTrackingUrl: Swift.String?
+  @objc public var rank: Swift.Int
+  @objc public var uclid: Swift.String?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class Elements : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var desktopImageLink: Swift.String?
+  @objc public var destinationUrl: Swift.String?
+  @objc public var mobileImageLink: Swift.String?
+  @objc public var productList: DFIRetailAdsSDK_iOS.ProductInfo?
+  @objc public var ctaElement: Swift.String?
+  @objc public var urlElement: Swift.String?
+  @objc public var textElement: Swift.String?
+  @objc public var imageElement: Swift.String?
+  @objc public var videoElement: Swift.String?
+  @objc public var staticElement: Swift.String?
+  @objc public var thirdPartyTags: DFIRetailAdsSDK_iOS.ThirdPartyTags?
+  @objc public var landingProductList: DFIRetailAdsSDK_iOS.LandingProduct?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class ThirdPartyTags : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var scriptDcmClick: Swift.String?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class LandingProduct : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var skuId: Swift.String?
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+@objc public class ProductInfo : ObjectiveC.NSObject, DFIRetailAdsSDK_iOS.Mappable {
+  @objc public var availability: Swift.String?
+  @objc public var name: Swift.String?
+  @objc public var skuId: Swift.String?
+  @objc public var imageLink: Swift.String?
+  @objc public var link: Swift.String?
+  @objc public var price: Foundation.NSNumber?
+  @objc public var currency: Swift.String?
+  @objc public var productType: Swift.String?
+  @objc public var sellerId: Swift.String?
+  @objc public var uclid: Swift.String?
+  @objc public var rank: Swift.Int
+  required public init?(map: DFIRetailAdsSDK_iOS.Map)
+  public func mapping(map: DFIRetailAdsSDK_iOS.Map)
+  @objc deinit
+}
+public protocol MapContext {
+}
+final public class Map {
+  final public let mappingType: DFIRetailAdsSDK_iOS.MappingType
+  final public var JSON: [Swift.String : Any] {
+    get
+  }
+  final public var isKeyPresent: Swift.Bool {
+    get
+  }
+  final public var currentValue: Any? {
+    get
+  }
+  final public var currentKey: Swift.String? {
+    get
+  }
+  final public var nestedKeyDelimiter: Swift.String {
+    get
+  }
+  final public var context: (any DFIRetailAdsSDK_iOS.MapContext)?
+  final public var shouldIncludeNilValues: Swift.Bool
+  final public let toObject: Swift.Bool
+  public init(mappingType: DFIRetailAdsSDK_iOS.MappingType, JSON: [Swift.String : Any], toObject: Swift.Bool = false, context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil, shouldIncludeNilValues: Swift.Bool = false)
+  final public subscript(key: Swift.String) -> DFIRetailAdsSDK_iOS.Map {
+    get
+  }
+  final public subscript(key: Swift.String, delimiter delimiter: Swift.String) -> DFIRetailAdsSDK_iOS.Map {
+    get
+  }
+  final public subscript(key: Swift.String, nested nested: Swift.Bool) -> DFIRetailAdsSDK_iOS.Map {
+    get
+  }
+  final public subscript(key: Swift.String, nested nested: Swift.Bool, delimiter delimiter: Swift.String) -> DFIRetailAdsSDK_iOS.Map {
+    get
+  }
+  final public subscript(key: Swift.String, ignoreNil ignoreNil: Swift.Bool) -> DFIRetailAdsSDK_iOS.Map {
+    get
+  }
+  final public subscript(key: Swift.String, delimiter delimiter: Swift.String, ignoreNil ignoreNil: Swift.Bool) -> DFIRetailAdsSDK_iOS.Map {
+    get
+  }
+  final public subscript(key: Swift.String, nested nested: Swift.Bool, ignoreNil ignoreNil: Swift.Bool) -> DFIRetailAdsSDK_iOS.Map {
+    get
+  }
+  final public subscript(key: Swift.String, nested nested: Swift.Bool?, delimiter delimiter: Swift.String, ignoreNil ignoreNil: Swift.Bool) -> DFIRetailAdsSDK_iOS.Map {
+    get
+  }
+  final public func value<T>() -> T?
+  @objc deinit
+}
+extension DFIRetailAdsSDK_iOS.Map {
+  final public func value<T>(_ key: Swift.String, default: T.Object, using transform: T) throws -> T.Object where T : DFIRetailAdsSDK_iOS.TransformType
+  final public func value<T>(_ key: Swift.String, default: T) throws -> T
+  final public func value<T>(_ key: Swift.String, default: [T]) -> [T] where T : DFIRetailAdsSDK_iOS.BaseMappable
+  final public func value<T>(_ key: Swift.String, default: T) throws -> T where T : DFIRetailAdsSDK_iOS.BaseMappable
+}
+public enum MappingType {
+  case fromJSON
+  case toJSON
+  public static func == (a: DFIRetailAdsSDK_iOS.MappingType, b: DFIRetailAdsSDK_iOS.MappingType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class Mapper<N> where N : DFIRetailAdsSDK_iOS.BaseMappable {
+  final public var context: (any DFIRetailAdsSDK_iOS.MapContext)?
+  final public var shouldIncludeNilValues: Swift.Bool
+  public init(context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil, shouldIncludeNilValues: Swift.Bool = false)
+  final public func map(JSONObject: Any?, toObject object: N) -> N
+  final public func map(JSONString: Swift.String, toObject object: N) -> N
+  final public func map(JSON: [Swift.String : Any], toObject object: N) -> N
+  final public func map(JSONString: Swift.String) -> N?
+  final public func map(JSONObject: Any?) -> N?
+  final public func map(JSON: [Swift.String : Any]) -> N?
+  final public func mapArray(JSONString: Swift.String) -> [N]?
+  final public func mapArray(JSONObject: Any?) -> [N]?
+  final public func mapArray(JSONArray: [[Swift.String : Any]]) -> [N]
+  final public func mapDictionary(JSONString: Swift.String) -> [Swift.String : N]?
+  final public func mapDictionary(JSONObject: Any?) -> [Swift.String : N]?
+  final public func mapDictionary(JSON: [Swift.String : [Swift.String : Any]]) -> [Swift.String : N]?
+  final public func mapDictionary(JSONObject: Any?, toDictionary dictionary: [Swift.String : N]) -> [Swift.String : N]
+  final public func mapDictionary(JSON: [Swift.String : [Swift.String : Any]], toDictionary dictionary: [Swift.String : N]) -> [Swift.String : N]
+  final public func mapDictionaryOfArrays(JSONObject: Any?) -> [Swift.String : [N]]?
+  final public func mapDictionaryOfArrays(JSON: [Swift.String : [[Swift.String : Any]]]) -> [Swift.String : [N]]?
+  final public func mapArrayOfArrays(JSONObject: Any?) -> [[N]]?
+  public static func parseJSONStringIntoDictionary(JSONString: Swift.String) -> [Swift.String : Any]?
+  public static func parseJSONString(JSONString: Swift.String) -> Any?
+  @objc deinit
+}
+extension DFIRetailAdsSDK_iOS.Mapper {
+  final public func map(JSONfile: Swift.String) -> N?
+  final public func mapArray(JSONfile: Swift.String) -> [N]?
+}
+extension DFIRetailAdsSDK_iOS.Mapper {
+  final public func toJSON(_ object: N) -> [Swift.String : Any]
+  final public func toJSONArray(_ array: [N]) -> [[Swift.String : Any]]
+  final public func toJSONDictionary(_ dictionary: [Swift.String : N]) -> [Swift.String : [Swift.String : Any]]
+  final public func toJSONDictionaryOfArrays(_ dictionary: [Swift.String : [N]]) -> [Swift.String : [[Swift.String : Any]]]
+  final public func toJSONString(_ object: N, prettyPrint: Swift.Bool = false) -> Swift.String?
+  final public func toJSONString(_ array: [N], prettyPrint: Swift.Bool = false) -> Swift.String?
+  public static func toJSONString(_ JSONObject: Any, prettyPrint: Swift.Bool) -> Swift.String?
+  public static func toJSONData(_ JSONObject: Any, options: Foundation.JSONSerialization.WritingOptions) -> Foundation.Data?
+}
+extension DFIRetailAdsSDK_iOS.Mapper where N : Swift.Hashable {
+  final public func mapSet(JSONString: Swift.String) -> Swift.Set<N>?
+  final public func mapSet(JSONObject: Any?) -> Swift.Set<N>?
+  final public func mapSet(JSONArray: [[Swift.String : Any]]) -> Swift.Set<N>
+  final public func toJSONSet(_ set: Swift.Set<N>) -> [[Swift.String : Any]]
+  final public func toJSONString(_ set: Swift.Set<N>, prettyPrint: Swift.Bool = false) -> Swift.String?
+}
+public func <- <T>(left: inout T, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.SignedInteger
+public func <- <T>(left: inout T?, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.SignedInteger
+public func <- <T>(left: inout T, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.UnsignedInteger
+public func <- <T>(left: inout T?, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.UnsignedInteger
+open class EnumTransform<T> : DFIRetailAdsSDK_iOS.TransformType where T : Swift.RawRepresentable {
+  public typealias Object = T
+  public typealias JSON = T.RawValue
+  public init()
+  open func transformFromJSON(_ value: Any?) -> T?
+  open func transformToJSON(_ value: T?) -> T.RawValue?
+  @objc deinit
+}
+infix operator <- : DefaultPrecedence
+infix operator >>> : DefaultPrecedence
+public func <- <T>(left: inout T, right: DFIRetailAdsSDK_iOS.Map)
+public func >>> <T>(left: T, right: DFIRetailAdsSDK_iOS.Map)
+public func <- <T>(left: inout T?, right: DFIRetailAdsSDK_iOS.Map)
+public func >>> <T>(left: T?, right: DFIRetailAdsSDK_iOS.Map)
+public func <- <T>(left: inout T, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: T, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout T?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: T?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Dictionary<Swift.String, T>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: Swift.Dictionary<Swift.String, T>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Dictionary<Swift.String, T>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: Swift.Dictionary<Swift.String, T>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Dictionary<Swift.String, [T]>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: Swift.Dictionary<Swift.String, [T]>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Dictionary<Swift.String, [T]>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: Swift.Dictionary<Swift.String, [T]>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Array<T>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: Swift.Array<T>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Array<T>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: Swift.Array<T>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Array<Swift.Array<T>>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: Swift.Array<Swift.Array<T>>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Array<Swift.Array<T>>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func >>> <T>(left: Swift.Array<Swift.Array<T>>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable
+public func <- <T>(left: inout Swift.Set<T>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable, T : Swift.Hashable
+public func >>> <T>(left: Swift.Set<T>, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable, T : Swift.Hashable
+public func <- <T>(left: inout Swift.Set<T>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable, T : Swift.Hashable
+public func >>> <T>(left: Swift.Set<T>?, right: DFIRetailAdsSDK_iOS.Map) where T : DFIRetailAdsSDK_iOS.BaseMappable, T : Swift.Hashable
+public func <- <T>(left: inout T, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func >>> <T>(left: T, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func <- <T>(left: inout T?, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func >>> <T>(left: T?, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func <- <T>(left: inout [T], right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func >>> <T>(left: [T], right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func <- <T>(left: inout [T]?, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func >>> <T>(left: [T]?, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func <- <T>(left: inout [Swift.String : T], right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func >>> <T>(left: [Swift.String : T], right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func <- <T>(left: inout [Swift.String : T]?, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+public func >>> <T>(left: [Swift.String : T]?, right: DFIRetailAdsSDK_iOS.Map) where T : Swift.RawRepresentable
+@_inheritsConvenienceInitializers @objc final public class DFIRretailAds : ObjectiveC.NSObject {
+  @objc public static let shared: DFIRetailAdsSDK_iOS.DFIRretailAds
+  @objc final public func initDFIRetailAds(isProd: Swift.Bool)
+  @objc final public func yuuHomepageAds() async -> DFIRetailAdsSDK_iOS.YuuHomePageAds?
+  @objc final public func yuuJestoPageAds() async -> DFIRetailAdsSDK_iOS.YuuJestoPageAds?
+  @objc final public func yuuMyIDSkinPageAds() async -> DFIRetailAdsSDK_iOS.YuuMyIDSkinPageAds?
+  @objc final public func wellcomeHomepageAds() async -> DFIRetailAdsSDK_iOS.WellcomeHomePageAds?
+  @objc final public func eventAdImpression(uclid: Swift.String, position: Foundation.NSNumber? = nil, extra_params: [Swift.String : Swift.AnyObject]? = nil) async -> DFIRetailAdsSDK_iOS.DFADUEventsResponse?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct DictionaryTransform<Key, Value> : DFIRetailAdsSDK_iOS.TransformType where Key : Swift.Hashable, Key : Swift.RawRepresentable, Value : DFIRetailAdsSDK_iOS.Mappable, Key.RawValue == Swift.String {
+  public init()
+  public func transformFromJSON(_ value: Any?) -> [Key : Value]?
+  public func transformToJSON(_ value: [Key : Value]?) -> Any?
+  public typealias JSON = Any
+  public typealias Object = [Key : Value]
+}
+public protocol BaseMappable {
+  mutating func mapping(map: DFIRetailAdsSDK_iOS.Map)
+}
+public protocol Mappable : DFIRetailAdsSDK_iOS.BaseMappable {
+  init?(map: DFIRetailAdsSDK_iOS.Map)
+}
+public protocol StaticMappable : DFIRetailAdsSDK_iOS.BaseMappable {
+  static func objectForMapping(map: DFIRetailAdsSDK_iOS.Map) -> (any DFIRetailAdsSDK_iOS.BaseMappable)?
+}
+extension DFIRetailAdsSDK_iOS.Mappable {
+  public init?(JSONString: Swift.String, context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil)
+  public init?(JSON: [Swift.String : Any], context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil)
+}
+extension DFIRetailAdsSDK_iOS.BaseMappable {
+  public func toJSON() -> [Swift.String : Any]
+  public func toJSONString(prettyPrint: Swift.Bool = false) -> Swift.String?
+}
+extension Swift.Array where Element : DFIRetailAdsSDK_iOS.BaseMappable {
+  public init?(JSONString: Swift.String, context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil)
+  public init(JSONArray: [[Swift.String : Any]], context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil)
+  public func toJSON() -> [[Swift.String : Any]]
+  public func toJSONString(prettyPrint: Swift.Bool = false) -> Swift.String?
+}
+extension Swift.Set where Element : DFIRetailAdsSDK_iOS.BaseMappable {
+  public init?(JSONString: Swift.String, context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil)
+  public init?(JSONArray: [[Swift.String : Any]], context: (any DFIRetailAdsSDK_iOS.MapContext)? = nil)
+  public func toJSON() -> [[Swift.String : Any]]
+  public func toJSONString(prettyPrint: Swift.Bool = false) -> Swift.String?
+}
+open class NSDecimalNumberTransform : DFIRetailAdsSDK_iOS.TransformType {
+  public typealias Object = Foundation.NSDecimalNumber
+  public typealias JSON = Swift.String
+  public init()
+  open func transformFromJSON(_ value: Any?) -> Foundation.NSDecimalNumber?
+  open func transformToJSON(_ value: Foundation.NSDecimalNumber?) -> Swift.String?
+  @objc deinit
+}
+open class URLTransform : DFIRetailAdsSDK_iOS.TransformType {
+  public typealias Object = Foundation.URL
+  public typealias JSON = Swift.String
+  public init(shouldEncodeURLString: Swift.Bool = false, allowedCharacterSet: Foundation.CharacterSet = .urlQueryAllowed)
+  open func transformFromJSON(_ value: Any?) -> Foundation.URL?
+  open func transformToJSON(_ value: Foundation.URL?) -> Swift.String?
+  @objc deinit
+}
+public protocol TransformType {
+  associatedtype Object
+  associatedtype JSON
+  func transformFromJSON(_ value: Any?) -> Self.Object?
+  func transformToJSON(_ value: Self.Object?) -> Self.JSON?
+}
+extension DFIRetailAdsSDK_iOS.DateTransform.Unit : Swift.Equatable {}
+extension DFIRetailAdsSDK_iOS.DateTransform.Unit : Swift.Hashable {}
+extension DFIRetailAdsSDK_iOS.DateTransform.Unit : Swift.RawRepresentable {}
+extension DFIRetailAdsSDK_iOS.MappingType : Swift.Equatable {}
+extension DFIRetailAdsSDK_iOS.MappingType : Swift.Hashable {}

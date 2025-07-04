@@ -1,0 +1,4 @@
+framework module DFIRetailAdsSDK_iOS {
+  header "DFIRetailAdsSDK_iOS-Swift.h"
+  requires objc
+}
